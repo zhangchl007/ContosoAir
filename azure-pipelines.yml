@@ -1,9 +1,7 @@
 trigger:
 - master
 pool:
-  image: "ubuntu-18.04"
-  demands:
-          - HasLicensedComponents -equals false
+  name: default
 steps:
   - task: CopyFiles@2
     displayName: 'Copy Files to:
